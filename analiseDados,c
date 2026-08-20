@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(){
+    int idade, qtd_pessoas, cont;
+    float peso, altura;
+    char olhos, cabelos;
+
+    printf(" Informe a quantidade de pessoas: \n");
+    scanf("%d", &qtd_pessoas); fflush(stdin);
+
+    while (qtd_pessoas<1){
+        printf("Informe uma quantidade válida: \n");
+        scanf("%d", &qtd_pessoas); fflush(stdin);
+    }
+    cont = 1;
+    while (cont<=qtd_pessoas){
+        printf("Pessoa %d \n", cont);
+        printf("Informe a idade: \n");
+        scanf("%d", &idade);
+
+        while (idade<1 || idade>120){
+            printf("Informe um valor válido. Entre 1 e 120: \n");
+            scanf("%d", &idade); fflush(stdin);
+        }
+        
+        printf("Informe o peso: \n");
+        scanf("%f", &peso);
+        while (peso<3 || peso>300){
+            printf("Informe um peso válido. Valor entre 3 e 300: \n");
+            scanf("%f", &peso); fflush(stdin);
+        }
+
+        printf("Informe a altura (em metros)");
+        scanf("%f", &altura); fflush(stdin);
+
+
+
+
+
+
+
+
+    }
+
+
+}
